@@ -6,7 +6,7 @@
   </ion-navbar>
 </ion-header> -->
 
-<ion-content padding>
+<ion-content>
 
   <ion-grid>
     <ion-row>
@@ -24,19 +24,36 @@
     </ion-row>
   </ion-grid>
 
-  <ion-scroll scrollX="true">
+  <ion-segment class="swipedTabs">
+    <ion-segment-button *ngFor='let tab of tabs; let i = index' value="typeOfProduct" (click)="seletTab(i)"
+    [ngClass]='{"swipedTabs-activeTab" : (this.swipedTabSlider && (this.swipedTabSlider.getActiveIndex() === 1
+    || ( tabs.length - 1 === i && this.swipedTabSlider.isEnd() ) ))}'>
+      {{tab}}
+    </ion-segment-button>
+  </ion-segment>
 
-      <ion-card>
-          <ion-card-content>
-              content
-          </ion-card-content>
-      </ion-card>
-      <ion-card>
-          <ion-card-content>
-              content
-          </ion-card-content>
-      </ion-card>
+  <div id="indicator" class="swipedTab-indicatorTab" [ngStyle]="{'width.%': (100/this.tabs.length)}"></div>
 
-  </ion-scroll>
+  <ion-slides #swipedTabSlider
+  (ionSlideDrag)="animateIndicator($event)"
+  (ionSlideWillChange)="updateIndicatorPosition()"
+  (ionSlideDidChange)="updateIndicatorPosition()"
+  (pan)="updateIndicatorPosition()"
+  [pager]="false">
+
+  <ion-slide>
+    <h1>Page1</h1>
+  </ion-slide>
+  <ion-slide>
+    <h1>Page2</h1>
+  </ion-slide>
+  <ion-slide>
+    <h1>Page3</h1>
+  </ion-slide>
+  <ion-slide>
+    <h1>Page4</h1>
+  </ion-slide>
+
+  </ion-slides>
 
 </ion-content>

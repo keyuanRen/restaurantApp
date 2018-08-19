@@ -1,4 +1,4 @@
-page-contact {
+page-menu {
 
   .imageSize{
     max-height: 45px;
@@ -12,6 +12,36 @@ page-contact {
     font-size: 22px;
     color: #f44265;
     font-weight:bold;
+  }
+
+  .swipedTab-indicatorTab
+  {
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3 all;
+    -o-transition: 0.3 all;
+    transition: 0.3 all;
+    transform-origin: top 0 left 0;
+    height: 1px;
+    position: relative;
+    top:-2px;
+    background-color: #f44265 !important;
+  }
+
+  .swipedTabs ion-segment-button
+  {
+    border: none !important;
+    color: gray !important;
+    //background-color: grey !important;
+  }
+
+  .swipedTabs ion-segment-button swipedTabs-activeTab
+  {
+    color: #f44265 !important;
+  }
+
+  .swipedTabs
+  {
+    border-bottom: solid 1px #e6e6e6 !important;
   }
 
 }
