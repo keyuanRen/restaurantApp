@@ -6,7 +6,7 @@
   </ion-navbar>
 </ion-header> -->
 
-<ion-content>
+<ion-content padding has-tabs="true">
 
   <ion-grid>
     <ion-row>
@@ -24,13 +24,17 @@
     </ion-row>
   </ion-grid>
 
+<!-- <ion-scroll scrollX="true" class="fixTypeContent"> -->
   <ion-segment class="swipedTabs">
-    <ion-segment-button *ngFor='let tab of tabs; let i = index' value="typeOfProduct" (click)="seletTab(i)"
-    [ngClass]='{"swipedTabs-activeTab" : (this.swipedTabSlider && (this.swipedTabSlider.getActiveIndex() === 1
-    || ( tabs.length - 1 === i && this.swipedTabSlider.isEnd() ) ))}'>
-      {{tab}}
-    </ion-segment-button>
+
+      <ion-segment-button *ngFor='let tab of tabs; let i = index' value="typeOfProduct" (click)="selectTab(i)"
+      [ngClass]='{"swipedTabs-activeTab" : (this.swipedTabSlider && (this.swipedTabSlider.getActiveIndex() === 1
+      || ( tabs.length - 1 === i && this.swipedTabSlider.isEnd() ) ))}'>
+        {{tab}}
+      </ion-segment-button>
+
   </ion-segment>
+<!-- </ion-scroll> -->
 
   <div id="indicator" class="swipedTab-indicatorTab" [ngStyle]="{'width.%': (100/this.tabs.length)}"></div>
 
@@ -41,18 +45,83 @@
   (pan)="updateIndicatorPosition()"
   [pager]="false">
 
-  <ion-slide>
-    <h1>Page1</h1>
-  </ion-slide>
-  <ion-slide>
-    <h1>Page2</h1>
-  </ion-slide>
-  <ion-slide>
-    <h1>Page3</h1>
-  </ion-slide>
-  <ion-slide>
-    <h1>Page4</h1>
-  </ion-slide>
+    <ion-slide>
+        <ion-card *ngFor='let MostPopularProduct of showTypeOfProduct("MostPopular")'>
+          <img src={{MostPopularProduct.pimage}}/>
+          <ion-card-content>
+          <ion-card-header>
+            {{MostPopularProduct.ptitle}}
+          </ion-card-header>
+            {{MostPopularProduct.pdescription}}
+          </ion-card-content>
+        </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card *ngFor='let ChickenProduct of showTypeOfProduct("Chicken")'>
+        <img src={{ChickenProduct.pimage}}/>
+        <ion-card-header>
+          {{ChickenProduct.ptitle}}
+        </ion-card-header>
+        <ion-card-content>
+          {{ChickenProduct.pdescription}}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card *ngFor='let RiceProduct of showTypeOfProduct("Rice")'>
+        <img src={{RiceProduct.pimage}}/>
+        <ion-card-header>
+          {{RiceProduct.ptitle}}
+        </ion-card-header>
+        <ion-card-content>
+          {{RiceProduct.pdescription}}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card *ngFor='let SoupProduct of showTypeOfProduct("Soup")'>
+        <img src={{SoupProduct.pimage}}/>
+        <ion-card-header>
+          {{SoupProduct.ptitle}}
+        </ion-card-header>
+        <ion-card-content>
+          {{SoupProduct.pdescription}}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card *ngFor='let NoodleProduct of showTypeOfProduct("Noodles")'>
+        <img src={{NoodleProduct.pimage}}/>
+        <ion-card-header>
+          {{NoodleProduct.ptitle}}
+        </ion-card-header>
+        <ion-card-content>
+          {{NoodleProduct.pdescription}}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card *ngFor='let ExtraProduct of showTypeOfProduct("Extras")'>
+        <img src={{ExtraProduct.pimage}}/>
+        <ion-card-header>
+          {{ExtraProduct.ptitle}}
+        </ion-card-header>
+        <ion-card-content>
+          {{ExtraProduct.pdescription}}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card *ngFor='let DrinkProduct of showTypeOfProduct("Drinks")'>
+        <img src={{DrinkProduct.pimage}}/>
+        <ion-card-header>
+          {{DrinkProduct.ptitle}}
+        </ion-card-header>
+        <ion-card-content>
+          {{DrinkProduct.pdescription}}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
 
   </ion-slides>
 

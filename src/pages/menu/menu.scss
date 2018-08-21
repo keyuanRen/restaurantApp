@@ -1,5 +1,14 @@
 page-menu {
 
+  .fixTypeContent{
+    height: 80px;
+    width: 150vw;
+  }
+
+  // .slideMargin{
+  //   margin-top: 150px;
+  // }
+
   .imageSize{
     max-height: 45px;
     max-width: 45px;
@@ -10,7 +19,7 @@ page-menu {
     text-align: center;
     //vertical-align: middle;
     font-size: 22px;
-    color: #f44265;
+    color: #EF2030;
     font-weight:bold;
   }
 
@@ -24,19 +33,19 @@ page-menu {
     height: 1px;
     position: relative;
     top:-2px;
-    background-color: #f44265 !important;
+    background-color: #EF2030 !important;
   }
 
-  .swipedTabs ion-segment-button
+  .swipedTabs .ion-segment-button
   {
     border: none !important;
     color: gray !important;
-    //background-color: grey !important;
+    background-color: grey !important;
   }
 
-  .swipedTabs ion-segment-button swipedTabs-activeTab
+  .swipedTabs .ion-segment-button .swipedTabs-activeTab
   {
-    color: #f44265 !important;
+    color: #EF2030 !important;
   }
 
   .swipedTabs
