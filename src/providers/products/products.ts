@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+// import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { Product } from '../../models/productInfo';
@@ -21,12 +21,6 @@ export class ProductsProvider {
       pimage:"../../assets/productImage/MostPopular1.jpg",
       ptitle:"Beef Bibimbap",
       pdescription:"Rice, assorted vegetables, and beef."
-    },
-    {
-      ptype:"MostPopular",
-      pimage:"../../assets/productImage/MostPopular2.jpg",
-      ptitle:"Snow Cheese Chicken",
-      pdescription:"Grated cheese with sprinkled parsley."
     },
     {
       ptype:"MostPopular",

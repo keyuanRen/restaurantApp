@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ProductsProvider } from '../providers/products/products';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ProductsProvider } from '../providers/products/products';
   providers: [
     StatusBar,
     SplashScreen,
+    BarcodeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ProductsProvider
   ]
