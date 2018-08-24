@@ -1,4 +1,3 @@
-
 import { Component, ViewChild} from '@angular/core';
 import { NavController, Slides } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
@@ -47,7 +46,7 @@ export class MenuPage {
   {
     if( this.swipedTabSlider.length() > this.swipedTabSlider.getActiveIndex())
     {
-      this.swipedTabIndicator.style.webkitTransform = 'translate3d(' + (this.swipedTabSlider.getActiveIndex()*100)+'%,0,0)';
+      this.swipedTabIndicator.style.webkitTransform = 'translate3d(' + (this.swipedTabSlider.getActiveIndex()*200)+'%,0,0)';
     }
   }
 

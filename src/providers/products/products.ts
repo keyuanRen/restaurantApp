@@ -2,6 +2,7 @@
 import { Injectable } from '@angular/core';
 
 import { Product } from '../../models/productInfo';
+import { User } from '../../models/userInfo'
 
 /*
   Generated class for the ProductsProvider provider.
@@ -14,6 +15,13 @@ export class ProductsProvider {
 
   constructor() {
   }
+
+//user info gonna be at firebase later, so did not set up the password
+  // public users:Array<User>= [{
+  //   username:"Bob",
+  //   password:"none",
+  //   rewardRecords:"../../assets/productImage/ICGChicken.png"
+  // }];
 
   public products:Array<Product>= [
     {
@@ -39,6 +47,24 @@ export class ProductsProvider {
       pimage:"../../assets/productImage/MostPopular2.jpg",
       ptitle:"Snow Cheese Chicken",
       pdescription:"Grated cheese with sprinkled parsley."
+    },
+    {
+      ptype:"Chicken",
+      pimage:"../../assets/productImage/chicken1.jpg",
+      ptitle:"Spicy Chilli Gangjung",
+      pdescription:"Smoked spicy chilli sauce medium spicy."
+    },
+    {
+      ptype:"Chicken",
+      pimage:"../../assets/productImage/chicken1.jpg",
+      ptitle:"Spicy Chilli Gangjung",
+      pdescription:"Smoked spicy chilli sauce medium spicy."
+    },
+    {
+      ptype:"Chicken",
+      pimage:"../../assets/productImage/chicken1.jpg",
+      ptitle:"Spicy Chilli Gangjung",
+      pdescription:"Smoked spicy chilli sauce medium spicy."
     },
     {
       ptype:"Chicken",

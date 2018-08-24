@@ -1,40 +1,54 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
+import { BarcodeScanner, BarcodeScannerOptions, BarcodeScanResult} from '@ionic-native/barcode-scanner';
+
+import { ProductsProvider } from '../../providers/products/products';
 
 @Component({
   selector: 'page-account',
   templateUrl: 'account.html'
 })
 export class AccountPage {
-  options: BarcodeScannerOptions;
-  encodeText:string='';
-  encodedData:any={};
-  scannedData:any={};
+  // options: BarcodeScannerOptions;
+  // encodeText:string='';
+  // encodedData:any={};
+  // scannedData:any={};
+  result: BarcodeScanResult;
+  dataTOEncode: string;
 
-  constructor(public navCtrl: NavController, public scanner:BarcodeScanner) {
-
+  constructor(public navCtrl: NavController, public barcode: BarcodeScanner, public user: ProductsProvider) {
   }
 
-  scan()
-  {
-    this.options={
-      prompt: 'Scan you barcode'
-    };
-    this.scanner.scan(this.options).then((data)=> {
-      this.scannedData = data;
-    }, (err)=> {
-      console.log('Error :', err);
-    });
+  // displayUserInfo(username)
+  // {
+  //   let items:Array<any> = [];
+  //   if(this.user.users.username == username)
+  //   {
+  //     items.push(User);
+  //   }
+  //   return items;
+  // }
+
+  async encodeData(){
+    try{
+      await this.barcode.encode(this.barcode.Encode.TEXT_TYPE, this.dataTOEncode);
+    }
+    catch(error){
+      console.error(error);
+    }
   }
 
-  encode()
-  {
-    this.scanner.encode(this.scanner.Encode.TEXT_TYPE, this.encodText).then((data)=> {
-      this.encodedData = data;
-    }, (err)=> {
-      console.log('Error :', err);
-    });
+  async scanBarcode(){
+    try{
+      const options: BarcodeScannerOptions={
+        prompt: 'Point your camera at a QR code',
+        torchOn: true
+      }
+      this.result= await this.barcode.scan(options);
+    }
+    catch(error){
+      console.error(error);
+    }
   }
 
 }

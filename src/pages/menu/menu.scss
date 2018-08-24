@@ -1,13 +1,8 @@
 page-menu {
 
-  .fixTypeContent{
-    height: 80px;
-    width: 150vw;
+  .scrollFix{
+    height:600px;
   }
-
-  // .slideMargin{
-  //   margin-top: 150px;
-  // }
 
   .imageSize{
     max-height: 45px;
@@ -50,7 +45,11 @@ page-menu {
 
   .swipedTabs
   {
+    width: 800px;
     border-bottom: solid 1px #e6e6e6 !important;
+  }
+  .slidesbar .scroll-content{
+    height: 75px;
   }
 
 }
