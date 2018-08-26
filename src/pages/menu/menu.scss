@@ -46,10 +46,21 @@ page-menu {
   .swipedTabs
   {
     width: 800px;
+    margin-top: 0px;
     border-bottom: solid 1px #e6e6e6 !important;
   }
-  .slidesbar .scroll-content{
-    height: 75px;
+
+  .swipedTabs .scroll-content{
+    margin-top: 0px;
   }
+
+  .slidesbar .scroll-content{
+    height: 100px;
+  }
+
+  .menuFix .scroll-content{
+    margin-top: 100px;
+  }
+
 
 }
