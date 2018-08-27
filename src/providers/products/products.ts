@@ -38,7 +38,7 @@ export class ProductsProvider {
     },
     {
       ptype:"MostPopular",
-      pimage:"../../assets/productImage/MostPopular3.jpg",
+      pimage:"../../assets/productImage/soup4.jpg",
       ptitle:"Seafood Soft Tofu Soup",
       pdescription:"Rice, soft tofu, egg, seafood, and vegetables."
     },

@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { TabsPage } from '../tabs/tabs';
 import { LoginPage } from '../login/login';
-import { RegisterPage } from '../register/register';
 
 /**
- * Generated class for the CoverPage page.
+ * Generated class for the RegisterPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -14,28 +12,20 @@ import { RegisterPage } from '../register/register';
 
 @IonicPage()
 @Component({
-  selector: 'page-cover',
-  templateUrl: 'cover.html',
+  selector: 'page-register',
+  templateUrl: 'register.html',
 })
-export class CoverPage {
+export class RegisterPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CoverPage');
+    console.log('ionViewDidLoad RegisterPage');
   }
 
-  lookAround(){
-    this.navCtrl.push(TabsPage);
-  }
-
-  login(){
+  confirmRegister(){
     this.navCtrl.push(LoginPage);
-  }
-
-  register(){
-    this.navCtrl.push(RegisterPage);
   }
 
 }

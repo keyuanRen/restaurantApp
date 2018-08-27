@@ -14,7 +14,7 @@ page-menu {
     text-align: center;
     //vertical-align: middle;
     font-size: 22px;
-    color: #EF2030;
+    color: color($colors, red);
     font-weight:bold;
   }
 
@@ -40,7 +40,7 @@ page-menu {
 
   .swipedTabs .ion-segment-button .swipedTabs-activeTab
   {
-    color: #EF2030 !important;
+    color: color($colors, red);
   }
 
   .swipedTabs

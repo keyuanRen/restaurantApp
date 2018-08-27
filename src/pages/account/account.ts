@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, App } from 'ionic-angular';
 import { BarcodeScanner, BarcodeScannerOptions, BarcodeScanResult} from '@ionic-native/barcode-scanner';
 
 import { ProductsProvider } from '../../providers/products/products';
@@ -16,7 +16,7 @@ export class AccountPage {
   result: BarcodeScanResult;
   dataTOEncode: string;
 
-  constructor(public navCtrl: NavController, public barcode: BarcodeScanner, public user: ProductsProvider) {
+  constructor(public navCtrl: NavController, public barcode: BarcodeScanner, public user: ProductsProvider, public app: App) {
   }
 
   // displayUserInfo(username)
@@ -28,6 +28,11 @@ export class AccountPage {
   //   }
   //   return items;
   // }
+
+  logOut(){
+    const root = this.app.getRootNav();
+    root.popToRoot();
+  }
 
   async encodeData(){
     try{

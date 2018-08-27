@@ -1,3 +1,26 @@
 page-cover {
 
+  #text-size{
+
+    div{
+      margin-top: 7px;
+    }
+
+    font-size: 10px;
+    text-align: center;
+    color: color($colors, red);
+  }
+
+.background1{
+  background: color($colors, red);
+}
+
+.background2{
+  background: color($colors, orange);
+}
+
+.background3{
+  background: color($colors, yellow);
+}
+
 }

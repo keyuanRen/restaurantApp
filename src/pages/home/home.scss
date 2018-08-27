@@ -1,7 +1,4 @@
 page-home {
-  .testColor{
-    background-color: blue;
-  }
 
   .slide-zoom {
     height: auto;
@@ -17,7 +14,7 @@ page-home {
       text-align: center;
       //vertical-align: middle;
       font-size: 22px;
-      color: #EF2030;
+      color: color($colors, red);
       font-weight:bold;
     }
 
