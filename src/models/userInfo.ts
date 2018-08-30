@@ -1,16 +1,14 @@
 export class User
 {
-  username:string;
+  email:string;
   password:string;
-  rewordRecords:string;
+  //rewordRecords:string;
 
-  constructor(username, password, records)
-  {
-    this.username = username;
-    this.password = password;
-    this.rewordRecords = records;
-  }
-
-
+  // constructor(username, password, records)
+  // {
+  //   this.username = username;
+  //   this.password = password;
+  //   this.rewordRecords = records;
+  // }
 
 }

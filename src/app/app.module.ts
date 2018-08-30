@@ -12,6 +12,11 @@ import { RegisterPage} from '../pages/register/register';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HttpClientModule } from '@angular/common/http'
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/Database';
+import { Firebase_info } from './firebaseInfo';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ProductsProvider } from '../providers/products/products';
@@ -31,7 +36,10 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(Firebase_info),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

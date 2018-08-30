@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { LoginPage } from '../login/login';
+import { User } from '../../models/userInfo';
+import { AngularFireAuth } from 'angularfire2/auth';
+//import { AngularFireDatabase } from 'angularfire2/database';
 
 /**
  * Generated class for the RegisterPage page.
@@ -17,15 +20,30 @@ import { LoginPage } from '../login/login';
 })
 export class RegisterPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  user = {} as User;
+
+  constructor(private fireAuth: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RegisterPage');
-  }
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad RegisterPage');
+  // }
 
-  confirmRegister(){
-    this.navCtrl.push(LoginPage);
+  async confirmRegister(user: User){
+    try
+    {
+      const info =await this.fireAuth.auth.createUserWithEmailAndPassword(user.email, user.password);
+
+      if(info)
+      {
+        this.navCtrl.push(LoginPage);
+      }
+    }
+    catch(e)
+    {
+      console.error(e);
+    }
+
   }
 
 }
