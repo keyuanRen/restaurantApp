@@ -9,16 +9,22 @@
 <ion-content padding>
 
 <!-- display QR code info after scanning the QR code -->
-  <ion-card *ngIf="result">
+  <!-- <ion-card *ngIf="result">
     <ion-card-content>
       <p>Text: {{result.text}}</p>
       <p>Format: {{result.format}}</p>
       <p>Cancelled: {{result.cancelled}}</p>
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
+
+  <p>Username: {{(profileData | async)?.username}}</p>
+  <img *ngIf="displayQrCode()" [src]={{(profileData | async)?.userQR}} />
+  <p>User Scord: {{(profileData | async)?.userScord}}</p>
+
+  <button  ion-button round color="red" (click)="logOut()">Log Out</button>
 
 <!-- encode the data to QR code -->
-  <ion-card>
+  <!-- <ion-card>
     <ion-card-content>
       <ion-item>
         <ion-label floating>Data to Encode</ion-label>
@@ -30,7 +36,7 @@
       </ion-row>
 
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
 
 <!-- display user information and records -->
   <!-- <ion-card *ngFor='let userInfo of displayUserInfo("Bob")'>
@@ -39,18 +45,16 @@
       {{userInfo.username}}
       {{userInfo.rewardRecords}}
     </ion-card-header>
-    <!-- *ngFor='let record of showRecordImage({{userInfo.rewardRecords}})' -->
+    *ngFor='let record of showRecordImage({{userInfo.rewardRecords}})' -->
       <!-- <img src={{userInfo.rewardRecords}}/>
     </ion-card-content>
-  </ion-card> --> -->
-
-  <button  ion-button round color="red" (click)="logOut()">Log Out</button>
+  </ion-card> -->
 
 <!-- fab button for user to scan the QR code -->
-  <ion-fab bottom right>
+  <!-- <ion-fab bottom right>
     <button ion-fab (click)="scanBarcode()">
       <ion-icon name="barcode"></ion-icon>
     </button>
-  </ion-fab>
+  </ion-fab> -->
 
 </ion-content>
