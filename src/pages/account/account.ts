@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { NavController, App } from 'ionic-angular';
-import { BarcodeScanner, BarcodeScannerOptions, BarcodeScanResult} from '@ionic-native/barcode-scanner';
+//import { BarcodeScanner, BarcodeScannerOptions, BarcodeScanResult} from '@ionic-native/barcode-scanner';
 
 import { UserProfile } from '../../models/userProfile';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { AnuglarFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
+import { AngularFireDatabase } from 'angularfire2/database';
+//import { FirebaseObjectObservable } from 'angularfire2/database-deprecated';
+
+import { ToastController } from 'ionic-angular';
 
 @Component({
   selector: 'page-account',
@@ -19,21 +22,26 @@ export class AccountPage {
   // dataTOEncode: string;
 
 // public barcode: BarcodeScanner,
-  profileInfo: FirebaseObjectObservable<UserProfile>
-
+  profileInfo: any;
+  user: boolean;
   constructor(private afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase,
-    public navCtrl: NavController, public user: ProductsProvider) {
+    public navCtrl: NavController, public toast: ToastController, public app: App) {
   }
 
   viewUserInformation(){
     this.afAuth.authState.take(1).subscribe(data => {
-      if(data && data.email && data.uid){
+      if(data && data.email && data.uid)
+      {
+        this.user = true;
         this.toast.create({
           message: 'Welcome',
           duration: 3000
         }).present();
 
-        this.profileInfo = this.afDatabase.object('userProfile/${data.uid}')
+        let path= 'userProfile'+'/'+ data.uid;
+        this.profileInfo = this.afDatabase.object(path);
+        console.log(this.profileInfo.username);
+
       }
       else
       {
@@ -42,6 +50,7 @@ export class AccountPage {
           duration: 3000
         }).present();
       }
+      this.user = false;
     })
   }
 

@@ -17,9 +17,11 @@
     </ion-card-content>
   </ion-card> -->
 
-  <p>Username: {{(profileData | async)?.username}}</p>
-  <img *ngIf="displayQrCode()" [src]={{(profileData | async)?.userQR}} />
-  <p>User Scord: {{(profileData | async)?.userScord}}</p>
+  <p *ngIf="this.user">Username: {{profileInfo.username}}</p>
+  <img *ngIf="this.user" src={{profileInfo.userQR}} />
+  <p *ngIf="this.user">User Scord: {{profileInfo.userScord}}</p>
+
+  <button  ion-button round (click)="viewUserInformation()">CheckInfo</button>
 
   <button  ion-button round color="red" (click)="logOut()">Log Out</button>
 

@@ -29,10 +29,11 @@ export class ProfilePage {
       self.profile.userQR = url;
     })
 
-    self.profile.userScord = null;
+    self.profile.userScord = 0;
 
     this.afAuth.authState.take(1).subscribe(auth => {
-      this.afDatabase.object('userProfile/${auth.uid}').set(this.profile)
+      let path= 'userProfile'+'/'+ auth.uid;
+      this.afDatabase.object(path).set(this.profile)
       .then(() => this.navCtrl.setRoot(LoginPage));
     })
   }

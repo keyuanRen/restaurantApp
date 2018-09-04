@@ -1,7 +1,7 @@
 export interface UserProfile{
   username: string;
   userQR: string;
-  userScord: string;
+  userScord: number;
 
   // constructor(username, userQR, userScord)
   // {

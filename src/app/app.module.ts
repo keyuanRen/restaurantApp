@@ -11,12 +11,13 @@ import { LoginPage} from '../pages/login/login';
 import { RegisterPage} from '../pages/register/register';
 import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngulaFireStorageModule } from 'angularfire2/storage';
+//import { FirebaseObjectObservable } from 'angularfire2/database-deprecated';
+import { AngularFireStorageModule } from 'angularfire2/storage';
 import { Firebase_info } from './firebaseInfo';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -42,7 +43,8 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(Firebase_info),
     AngularFireDatabaseModule,
-    AngulaFireStorageModule,
+    //FirebaseObjectObservable,
+    AngularFireStorageModule,
     AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
