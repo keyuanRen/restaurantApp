@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, App } from 'ionic-angular';
 //import { BarcodeScanner, BarcodeScannerOptions, BarcodeScanResult} from '@ionic-native/barcode-scanner';
 
-import { UserProfile } from '../../models/userProfile';
+//import { UserProfile } from '../../models/userProfile';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase } from 'angularfire2/database';
 //import { FirebaseObjectObservable } from 'angularfire2/database-deprecated';
@@ -50,11 +50,25 @@ export class AccountPage {
           duration: 3000
         }).present();
       }
-      this.user = false;
+
     })
   }
 
   logOut(){
+    this.afAuth.auth.signOut()
+    .catch(data => {console.error(e);});
+
+    this.afAuth.authState.take(1).subscribe(data => {
+      if(!data)
+      {
+        const root = this.app.getRootNav();
+        root.popToRoot();
+      }
+    })
+
+  }
+
+  backToWelcome(){
     const root = this.app.getRootNav();
     root.popToRoot();
   }

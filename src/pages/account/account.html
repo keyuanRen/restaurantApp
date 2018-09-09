@@ -23,7 +23,8 @@
 
   <button  ion-button round (click)="viewUserInformation()">CheckInfo</button>
 
-  <button  ion-button round color="red" (click)="logOut()">Log Out</button>
+  <button  ion-button round color="red" *ngIf="this.user" (click)="logOut()">Log Out</button>
+  <button  ion-button round color="red" *ngIf="!this.user" (click)="backToWelcome()">Back To Welcome Page</button>
 
 <!-- encode the data to QR code -->
   <!-- <ion-card>
