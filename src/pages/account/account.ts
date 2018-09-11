@@ -20,16 +20,18 @@ export class AccountPage {
   // scannedData:any={};
   // result: BarcodeScanResult;
   // dataTOEncode: string;
-
-// public barcode: BarcodeScanner,
-  profileInfo: any;
+  // public barcode: BarcodeScanner,
+  //profileInfo: any;
+  username: any;
+  userScord: any;
+  userQR: any;
   user: boolean;
   constructor(private afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase,
     public navCtrl: NavController, public toast: ToastController, public app: App) {
   }
 
-  viewUserInformation(){
-    this.afAuth.authState.take(1).subscribe(data => {
+  ionViewDidLoad(){
+    this.afAuth.authState.subscribe(data => {
       if(data && data.email && data.uid)
       {
         this.user = true;
@@ -38,9 +40,21 @@ export class AccountPage {
           duration: 3000
         }).present();
 
-        let path= 'userProfile'+'/'+ data.uid;
-        this.profileInfo = this.afDatabase.object(path);
-        console.log(this.profileInfo.username);
+        this.afDatabase.object('userProfile/' + data.uid + '/').snapshotChanges().subscribe(
+        (action)=>{
+          if(action.payload.val())
+          {
+            //console.log(action.payload.val().username);
+            this.username = action.payload.val().username;
+            this.userQR = action.payload.val().userQR;
+            this.userScord = action.payload.val().userScord;
+          }
+          else
+          {
+            console.log("None Data");
+          }
+
+        });
 
       }
       else
@@ -50,13 +64,21 @@ export class AccountPage {
           duration: 3000
         }).present();
       }
-
     })
+  }
+
+  gotData(data){
+    console.log(data.val());
+  }
+
+  errorData(err){
+    console.log("Error");
+    console.log(err);
   }
 
   logOut(){
     this.afAuth.auth.signOut()
-    .catch(data => {console.error(e);});
+    .catch(data => {console.log("Error");});
 
     this.afAuth.authState.take(1).subscribe(data => {
       if(!data)
