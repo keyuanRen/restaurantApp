@@ -35,10 +35,6 @@ export class AccountPage {
       if(data && data.email && data.uid)
       {
         this.user = true;
-        this.toast.create({
-          message: 'Welcome',
-          duration: 3000
-        }).present();
 
         this.afDatabase.object('userProfile/' + data.uid + '/').snapshotChanges().subscribe(
         (action)=>{
@@ -54,6 +50,13 @@ export class AccountPage {
           {
             console.log("None Data");
           }
+
+        this.toast.create({
+          message: 'Welcome back '+ this.profileInfo.username + "!",
+          duration: 3000
+        }).present();
+
+
 
         });
 

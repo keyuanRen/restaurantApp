@@ -2,34 +2,29 @@
 <ion-content padding>
 
 <ion-slides pager>
-  <ion-slide id="text-size" class="background3">
-    <h1>Sparrow Mill Express</h1>
-
-    <ion-grid style="margin-top: 175px;">
-      <ion-row>
-        <ion-col col-7>
-          <button  ion-button round color="red" style="width: 120px;" (click)="lookAround()">Look Around</button>
-        </ion-col>
-        <ion-col col-4>
-          <button  ion-button round color="red" (click)="login()">Login</button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-
-    <div (click)="register()">Haven't Have An Account?</div>
-
+  <ion-slide>
+    <img src="../assets/imgs/Page 1.png" />
   </ion-slide>
 
-  <ion-slide id="text-size" class="background2">
-    <h1>View Menu</h1>
+  <ion-slide>
+    <img src="../assets/imgs/Page 2.png" />
   </ion-slide>
 
-  <ion-slide id="text-size" class="background3">
-    <h1>Join Us</h1>
-    <h3>Get Special Rewords</h3>
+  <ion-slide>
+    <img src="../assets/imgs/Page 3.png" />
   </ion-slide>
 
 </ion-slides>
+
+<div class="loginPosition">
+  <div class="fixButton">
+    <button  ion-button round color="red" style="width: 120px;" (click)="lookAround()">Look Around</button>
+    <button  ion-button round color="red" (click)="login()">Login</button>
+  </div>
+  <div style="text-align: center; margin-top:10px;" (click)="register()">Haven't Have An Account?</div>
+</div>
+
+
 
 
 </ion-content>

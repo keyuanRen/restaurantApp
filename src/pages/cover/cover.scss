@@ -1,26 +1,30 @@
 page-cover {
 
-  #text-size{
+  // #text-size{
+  //
+  //   div{
+  //     margin-top: 7px;
+  //   }
+  //
+  //   font-size: 10px;
+  //   text-align: center;
+  //   color: color($colors, red);
+  // }
 
-    div{
-      margin-top: 7px;
-    }
-
-    font-size: 10px;
-    text-align: center;
-    color: color($colors, red);
+  .loginPosition{
+    width: 100vw;
+    display:block;
+    border-style: relative;
+    position: fixed;
+    z-index: 9999;
+    top:75vh;
+    left:50%;
+    transform: translateX(-50%);
   }
 
-.background1{
-  background: color($colors, red);
-}
-
-.background2{
-  background: color($colors, orange);
-}
-
-.background3{
-  background: color($colors, yellow);
-}
+  .fixButton{
+    display: flex;
+    justify-content: space-around;
+  }
 
 }
