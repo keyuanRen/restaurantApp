@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, App } from 'ionic-angular';
 //import { BarcodeScanner, BarcodeScannerOptions, BarcodeScanResult} from '@ionic-native/barcode-scanner';
 
-//import { UserProfile } from '../../models/userProfile';
+import { UserProfile } from '../../models/userProfile';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase } from 'angularfire2/database';
 //import { FirebaseObjectObservable } from 'angularfire2/database-deprecated';
@@ -21,10 +21,10 @@ export class AccountPage {
   // result: BarcodeScanResult;
   // dataTOEncode: string;
   // public barcode: BarcodeScanner,
-  //profileInfo: any;
-  username: any;
-  userScord: any;
-  userQR: any;
+  profileInfo= {} as UserProfile;
+  // use;
+  // userScord: any;
+  // userQR: any;
   user: boolean;
   constructor(private afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase,
     public navCtrl: NavController, public toast: ToastController, public app: App) {
@@ -45,9 +45,10 @@ export class AccountPage {
           if(action.payload.val())
           {
             //console.log(action.payload.val().username);
-            this.username = action.payload.val().username;
-            this.userQR = action.payload.val().userQR;
-            this.userScord = action.payload.val().userScord;
+            let user:any = action.payload.val();
+            this.profileInfo.username = user.username;
+            this.profileInfo.userQR = user.userQR;
+            this.profileInfo.userScord = user.userScord;
           }
           else
           {

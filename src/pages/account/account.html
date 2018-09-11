@@ -17,9 +17,9 @@
     </ion-card-content>
   </ion-card> -->
 
-  <p *ngIf="this.user" >Username: {{this.username}}</p>
-  <img *ngIf="this.user" src={{this.userQR}} />
-  <p *ngIf="this.user">User Scord: {{this.userScord}}</p>
+  <p *ngIf="this.user" >Username: {{profileInfo.username}}</p>
+  <img *ngIf="this.user" src={{profileInfo.userQR}} />
+  <p *ngIf="this.user">User Scord: {{profileInfo.userScord}}</p>
 
   <!-- <button  ion-button round (click)="viewUserInformation()">CheckInfo</button> -->
 
