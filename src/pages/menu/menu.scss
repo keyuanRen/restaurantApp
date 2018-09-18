@@ -34,20 +34,19 @@ page-menu {
   .swipedTabs .ion-segment-button
   {
     border: none !important;
-    color: gray !important;
-    background-color: grey !important;
+
+    background-color: color($colors, orange);
   }
 
   .swipedTabs .ion-segment-button .swipedTabs-activeTab
   {
-    color: color($colors, red);
+    color: gray !important;
   }
 
   .swipedTabs
   {
     width: 800px;
     margin-top: 0px;
-    border-bottom: solid 1px #e6e6e6 !important;
   }
 
   .swipedTabs .scroll-content{
@@ -62,5 +61,8 @@ page-menu {
     margin-top: 100px;
   }
 
+  .card-background{
+    background-color: color($colors, orange);
+  }
 
 }

@@ -1,9 +1,19 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Account
-    </ion-title>
-  </ion-navbar>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2 >
+        <img class="imageSize" src="../assets/imgs/ICGChicken.png"/>
+      </ion-col>
+      <ion-col>
+        <p class="titlePosition">
+          Sparrow Mill Express
+        </p>
+      </ion-col>
+      <ion-col col-2 >
+        <img class="imageSize" src="../assets/imgs/KoreanChicken.png"/>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-header>
 
 <ion-content padding>
@@ -17,14 +27,14 @@
     </ion-card-content>
   </ion-card> -->
 
-  <p *ngIf="this.user" >Username: {{profileInfo.username}}</p>
-  <img *ngIf="this.user" src={{profileInfo.userQR}} />
-  <p *ngIf="this.user">User Scord: {{profileInfo.userScord}}</p>
+  <img *ngIf="this.user" class="imagePostion" src={{profileInfo.userQR}} />
+  <p *ngIf="this.user" style="text-align: center;" >Username: {{profileInfo.username}}</p>
+  <p *ngIf="this.user" style="text-align: center;" >User Scord: {{profileInfo.userScord}}</p>
 
   <!-- <button  ion-button round (click)="viewUserInformation()">CheckInfo</button> -->
 
-  <button  ion-button round color="red" *ngIf="this.user" (click)="logOut()">Log Out</button>
-  <button  ion-button round color="red" *ngIf="!this.user" (click)="backToWelcome()">Back To Welcome Page</button>
+  <button  ion-button round color="red" class="buttonPosition" *ngIf="this.user" (click)="logOut()">Log Out</button>
+  <button  ion-button round color="red" class="buttonPosition" *ngIf="!this.user" (click)="backToWelcome()">Back To Welcome Page</button>
 
 <!-- encode the data to QR code -->
   <!-- <ion-card>

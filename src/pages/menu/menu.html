@@ -47,7 +47,7 @@
     <ion-slide>
       <ion-scroll scrollY="true" class="scrollFix">
         <ion-list>
-            <ion-card *ngFor='let MostPopularProduct of showTypeOfProduct("MostPopular")'>
+            <ion-card class="card-background" *ngFor='let MostPopularProduct of showTypeOfProduct("MostPopular")'>
               <img src={{MostPopularProduct.pimage}}/>
               <ion-card-content>
               <ion-card-header>
@@ -63,7 +63,7 @@
     <ion-slide>
       <ion-scroll scrollY="true" class="scrollFix">
         <ion-list>
-          <ion-card *ngFor='let ChickenProduct of showTypeOfProduct("Chicken")'>
+          <ion-card class="card-background" *ngFor='let ChickenProduct of showTypeOfProduct("Chicken")'>
             <img src={{ChickenProduct.pimage}}/>
             <ion-card-header>
               {{ChickenProduct.ptitle}}
@@ -79,7 +79,7 @@
     <ion-slide>
       <ion-scroll scrollY="true" class="scrollFix">
         <ion-list>
-          <ion-card *ngFor='let RiceProduct of showTypeOfProduct("Rice")'>
+          <ion-card class="card-background" *ngFor='let RiceProduct of showTypeOfProduct("Rice")'>
             <img src={{RiceProduct.pimage}}/>
             <ion-card-header>
               {{RiceProduct.ptitle}}
@@ -95,7 +95,7 @@
     <ion-slide>
       <ion-scroll scrollY="true" class="scrollFix">
         <ion-list>
-          <ion-card *ngFor='let SoupProduct of showTypeOfProduct("Soup")'>
+          <ion-card class="card-background" *ngFor='let SoupProduct of showTypeOfProduct("Soup")'>
             <img src={{SoupProduct.pimage}}/>
             <ion-card-header>
               {{SoupProduct.ptitle}}
@@ -111,7 +111,7 @@
     <ion-slide>
       <ion-scroll scrollY="true" class="scrollFix">
         <ion-list>
-          <ion-card *ngFor='let NoodleProduct of showTypeOfProduct("Noodles")'>
+          <ion-card class="card-background" *ngFor='let NoodleProduct of showTypeOfProduct("Noodles")'>
             <img src={{NoodleProduct.pimage}}/>
             <ion-card-header>
               {{NoodleProduct.ptitle}}
@@ -127,7 +127,7 @@
     <ion-slide>
       <ion-scroll scrollY="true" class="scrollFix">
         <ion-list>
-          <ion-card *ngFor='let ExtraProduct of showTypeOfProduct("Extras")'>
+          <ion-card class="card-background" *ngFor='let ExtraProduct of showTypeOfProduct("Extras")'>
             <img src={{ExtraProduct.pimage}}/>
             <ion-card-header>
               {{ExtraProduct.ptitle}}
@@ -143,7 +143,7 @@
     <ion-slide>
       <ion-scroll scrollY="true" class="scrollFix">
         <ion-list>
-          <ion-card *ngFor='let DrinkProduct of showTypeOfProduct("Drinks")'>
+          <ion-card class="card-background" *ngFor='let DrinkProduct of showTypeOfProduct("Drinks")'>
             <img src={{DrinkProduct.pimage}}/>
             <ion-card-header>
             </ion-card-header>

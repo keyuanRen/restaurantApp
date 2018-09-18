@@ -1,6 +1,30 @@
 page-account {
-.imageSize{
-  height: 24px;
-  width: 24px;
+
+  .imageSize{
+    max-height: 45px;
+    max-width: 45px;
+  }
+
+  .titlePosition{
+    margin:auto;
+    text-align: center;
+    //vertical-align: middle;
+    font-size: 22px;
+    color: color($colors, red);
+    font-weight:bold;
+  }
+
+  .imagePostion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
+
+  .buttonPosition{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
