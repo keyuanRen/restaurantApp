@@ -3,7 +3,7 @@ import { NavController, Slides } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 
 // import { ProductsProvider } from '../../providers/products/products';
-import { Product } from '../../models/productInfo';
+//import { Product } from '../../models/productInfo';
 
 import { AngularFireDatabase } from 'angularfire2/database';
 
@@ -18,7 +18,7 @@ export class MenuPage {
   swipedTabIndicator : any = null;
   tabs: any =[];
 
-  products: Array<Product> = [];
+  products: Array<any> = [];
   constructor(public navCtrl: NavController, public http: HttpClient, private afDatabase: AngularFireDatabase) {
     this.tabs=["MostPopular", "Chicken", "Rice", "Soup", "Noodles", "Extras", "Drinks"];
   }

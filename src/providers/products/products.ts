@@ -1,7 +1,7 @@
 // import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { Product } from '../../models/productInfo';
+//import { Product } from '../../models/productInfo';
 // import { User } from '../../models/userInfo'
 
 /*
