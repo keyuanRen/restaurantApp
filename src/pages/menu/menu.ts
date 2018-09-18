@@ -2,7 +2,10 @@ import { Component, ViewChild} from '@angular/core';
 import { NavController, Slides } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 
-import { ProductsProvider } from '../../providers/products/products';
+// import { ProductsProvider } from '../../providers/products/products';
+import { Product } from '../../models/productInfo';
+
+import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'page-menu',
@@ -15,14 +18,35 @@ export class MenuPage {
   swipedTabIndicator : any = null;
   tabs: any =[];
 
-  constructor(public navCtrl: NavController, public http: HttpClient, public product: ProductsProvider) {
+  products: Array<Product> = [];
+  constructor(public navCtrl: NavController, public http: HttpClient, private afDatabase: AngularFireDatabase) {
     this.tabs=["MostPopular", "Chicken", "Rice", "Soup", "Noodles", "Extras", "Drinks"];
   }
 
+  ionViewDidLoad(){
+    this.afDatabase.object('products/').snapshotChanges().subscribe(
+    (action)=>{
+      if(action.payload.val())
+      {
+        console.log(action.payload.val());
+        let items: any = action.payload.val();
+        items.forEach(
+          (product) =>{
+            this.products.push(product);
+          }
+        );
+      }
+      else
+      {
+        console.log("None Data");
+      }
+  });
+}
+
   showTypeOfProduct(type)
   {
-    let items:Array<any> = [];
-    this.product.products.forEach((Product)=>{
+    let items:any = [];
+    this.products.forEach((Product)=>{
       if(Product.ptype == type)
       {
         items.push(Product);

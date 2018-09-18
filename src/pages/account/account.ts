@@ -31,45 +31,47 @@ export class AccountPage {
   }
 
   ionViewDidLoad(){
-    this.afAuth.authState.subscribe(data => {
-      if(data && data.email && data.uid)
-      {
-        this.user = true;
+    try
+    {
+      this.afAuth.authState.subscribe(data => {
+        if(data && data.email && data.uid)
+        {
+          this.user = true;
 
-        this.afDatabase.object('userProfile/' + data.uid + '/').snapshotChanges().subscribe(
-        (action)=>{
-          if(action.payload.val())
-          {
-            //console.log(action.payload.val().username);
-            let user:any = action.payload.val();
-            this.profileInfo.username = user.username;
-            this.profileInfo.userQR = user.userQR;
-            this.profileInfo.userScord = user.userScord;
-          }
-          else
-          {
-            console.log("None Data");
-          }
+          this.afDatabase.object('userProfile/' + data.uid + '/').snapshotChanges().subscribe(
+          (action)=>{
+            if(action.payload.val())
+            {
+              //console.log(action.payload.val().username);
+              let user:any = action.payload.val();
+              this.profileInfo.username = user.username;
+              this.profileInfo.userQR = user.userQR;
+              this.profileInfo.userScord = user.userScord;
+            }
+            else
+            {
+              console.log("None Data");
+            }
 
-        this.toast.create({
-          message: 'Welcome back '+ this.profileInfo.username + "!",
-          duration: 3000
-        }).present();
-
-
-
-        });
-
-      }
-      else
-      {
-        this.toast.create({
-          message: 'Have Not Log In',
-          duration: 3000
-        }).present();
-      }
-    })
+          this.toast.create({
+            message: 'Welcome back '+ this.profileInfo.username + "!",
+            duration: 3000
+          }).present();
+          });
+        }
+        else
+        {
+          this.toast.create({
+            message: 'Have Not Log In',
+            duration: 3000
+          }).present();
+        }
+    });
   }
+  catch(error){
+    console.log(error);
+  }
+}
 
   gotData(data){
     console.log(data.val());

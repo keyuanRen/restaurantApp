@@ -1,0 +1,326 @@
+[
+ {
+   "ptype":"MostPopular",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice10.jpg?alt=media&token=3b93275d-eaa0-460c-89c1-f8e7f1f74332",
+   "ptitle":"Beef Bibimbap",
+   "pdescription":"Rice, assorted vegetables, and beef."
+ },
+ {
+   "ptype":"MostPopular",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice2.jpg?alt=media&token=24956b1c-07a6-4524-8a61-21214ed44250",
+   "ptitle":"La Galbi",
+   "pdescription":"Beef ribs and rice."
+ },
+ {
+   "ptype":"MostPopular",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup4.jpg?alt=media&token=125e4190-87cb-417f-8508-beba8e71f329",
+   "ptitle":"Seafood Soft Tofu Soup",
+   "pdescription":"Rice, soft tofu, egg, seafood, and vegetables."
+ },
+ {
+   "ptype":"MostPopular",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken3.jpg?alt=media&token=7f0e2ae7-25c3-4dab-9b1c-7364783e9be1",
+   "ptitle":"Spring Onion Chicken",
+   "pdescription":"Wasabi taste sauce with spring onion on top."
+ },
+ {
+   "ptype":"MostPopular",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken2.jpg?alt=media&token=3b855a55-fce2-4932-a2db-655025940c25",
+   "ptitle":"Sweet and Spicy Chicken",
+   "pdescription":"Sweet and spicy sauce with sprinkled ground peanuts o..."
+ },
+ {
+   "ptype":"MostPopular",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken4.jpg?alt=media&token=c44b5f6a-4318-4ddc-a0ac-847b31e7cc72",
+   "ptitle":"Snow Cheese Chicken",
+   "pdescription":"Grated cheese with sprinkled parsley."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken1.jpg?alt=media&token=14bd1164-b7a9-4c43-bbc6-19c88266dbe2",
+   "ptitle":"Original Fried Chicken",
+   "pdescription":"Fried chicken."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken2.jpg?alt=media&token=3b855a55-fce2-4932-a2db-655025940c25",
+   "ptitle":"Sweet and Spicy Chicken",
+   "pdescription":"Sweet and spicy sauce with sprinkled ground peanuts on ..."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken3.jpg?alt=media&token=7f0e2ae7-25c3-4dab-9b1c-7364783e9be1",
+   "ptitle":"Spring Onion Chicken",
+   "pdescription":"Wasabi taste sauce with spring onion on top."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken4.jpg?alt=media&token=c44b5f6a-4318-4ddc-a0ac-847b31e7cc72",
+   "ptitle":"Snow Cheese Chicken",
+   "pdescription":"Grated cheese with sprinkled parsley."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken5.jpg?alt=media&token=7ff5e59f-b2fc-41a8-900d-fa13360f8f03",
+   "ptitle":"Creamy Onion Chicken",
+   "pdescription":"Rich creamy onion sauce with sliced onion on top."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken6.jpg?alt=media&token=7765fb12-4f47-4efd-a5b1-c0d48a10e12e",
+   "ptitle":"Spicy Chilli Gangjung",
+   "pdescription":"Smoked spicy chilli sauce medium spicy."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken7.jpg?alt=media&token=d3c5927f-743d-4bfb-905d-9e204325387b",
+   "ptitle":"Soy Sauce Gangjung",
+   "pdescription":"Rich savory soy sauce with ground garlic."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken8.jpg?alt=media&token=3083ff68-b9da-408b-b8d5-a91dedd9a059",
+   "ptitle":"Spicy Garlic Gangjung",
+   "pdescription":"Spicy savory soy sauce with chopped garlic."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken9.jpg?alt=media&token=b85ba1c4-b182-4eaf-98fa-d01b278b43bd",
+   "ptitle":"Hot and Spicy Gangjung",
+   "pdescription":"Spiciest chicken."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken10.jpg?alt=media&token=36c51074-8fe9-4efe-88ee-0c7c665f5283",
+   "ptitle":"Incredible Gangjung",
+   "pdescription":"Sweet cinnamon based soy sauce chicken."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken1.jpg?alt=media&token=14bd1164-b7a9-4c43-bbc6-19c88266dbe2",
+   "ptitle":"Tender Long Chicken",
+   "pdescription":"Juicy, nutritious breast fillet. Served with choice of sauce."
+ },
+ {
+   "ptype":"Chicken",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/chicken12.jpg?alt=media&token=581f57a1-9622-4f26-b278-9b24f257c60f",
+   "ptitle":"10 Mid Wings",
+   "pdescription":"10 of the juicy and crispy middle mings"
+ },
+ {
+   "ptype":"Rice",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice1.jpg?alt=media&token=11fb4e46-938f-4fec-a241-ce02f56c5cd2",
+   "ptitle":"Kimchi Fried Rice",
+   "pdescription":"Stir fried kimchi rice and egg on top."
+ },
+ {
+   "ptype":"Rice",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice2.jpg?alt=media&token=24956b1c-07a6-4524-8a61-21214ed44250",
+   "ptitle":"La Galbi",
+   "pdescription":"Beef ribs and rice."
+ },
+ {
+   "ptype":"Rice",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice3.jpg?alt=media&token=102958c7-bc0f-4fd9-a585-31d4ca89fc76",
+   "ptitle":"Jjajangbap",
+   "pdescription":"Black bean sauce, rice, and egg."
+ },
+ {
+   "ptype":"Rice",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice4.jpg?alt=media&token=817e2084-7025-47f7-8645-c3a93929f33f",
+   "ptitle":"Bulgogi Topping rice",
+   "pdescription":"Stir fried beef, rice, and vegetables."
+ },
+ {
+   "ptype":"Rice",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice5.jpg?alt=media&token=546de2ac-b28e-40f9-bef8-0015448fc318",
+   "ptitle":"Squid Topping Rice",
+   "pdescription":"Stir fried spicy squid, rice, and vegetables."
+ },
+ {
+   "ptype":"Rice",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice6.jpg?alt=media&token=3d3e00e7-195e-43c0-babc-5c7dc9076ece",
+   "ptitle":"Pork Topping Rice",
+   "pdescription":"Stir fried spicy pork, rice, and vegetables."
+ },
+ {
+   "ptype":"Rice",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice7.jpg?alt=media&token=91b326e9-55ff-4660-88e2-b9163d020d05",
+   "ptitle":"Octopus Topping Rice",
+   "pdescription":"Stir fried spicy octopus, rice, and vegetables."
+ },
+ {
+   "ptype":"Rice",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice8.jpg?alt=media&token=7e52fd2f-696e-4303-bf58-90f424a7e644",
+   "ptitle":"Chicken topping rice",
+   "pdescription":"Stir fried spicy chicken, rice, and vegetables."
+ },
+ {
+   "ptype":"Rice",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice9.jpg?alt=media&token=19c7d790-374f-488f-b234-d0625024706c",
+   "ptitle":"Vegetable Bibimbap",
+   "pdescription":"Rice and assorted vegetables."
+ },
+ {
+   "ptype":"Rice",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/rice10.jpg?alt=media&token=3b93275d-eaa0-460c-89c1-f8e7f1f74332",
+   "ptitle":"Beef Bibimbap",
+   "pdescription":"Rice, assorted vegetables, and beef."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup1.jpg?alt=media&token=cf0a59d7-60d5-4e59-a07e-339e747a96e0",
+   "ptitle":"Vegetable Soft Tofu Soup",
+   "pdescription":"Rice, soft tofu, egg, and vegetables."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup2.jpg?alt=media&token=89148bac-a052-4c61-9644-1f3532e01b10",
+   "ptitle":"Beef Soft Tofu Soup",
+   "pdescription":"Rice, soft tofu, beef, egg, and vegetables."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup3.jpg?alt=media&token=77ef2faf-81e8-4254-a321-0eb35694b768",
+   "ptitle":"Dumpling Soft Tofu Soup",
+   "pdescription":"Rice, soft tofu, seafood dumplings, egg, and..."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup4.jpg?alt=media&token=125e4190-87cb-417f-8508-beba8e71f329",
+   "ptitle":"Seafood Soft Tofu Soup",
+   "pdescription":"Rice, soft tofu, egg, seafood, and vegetables."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup5.jpg?alt=media&token=92664fa2-2288-427b-b6b7-7ac731f6268b",
+   "ptitle":"Seafood Soy Bean Soup",
+   "pdescription":"Rice, Korean soy bean, seafood, and vegetables."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup6.jpg?alt=media&token=2d477b16-6bd8-4b69-91dd-25726c7f034c",
+   "ptitle":"Beef Brisket Soy Bean Soup",
+   "pdescription":"Rice, Korean soy bean, beef brisket, and vegetables."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup7.jpg?alt=media&token=f4a973b2-5b46-4b47-8e3f-f8bc056a22eb",
+   "ptitle":"Ginseng Chicken Soup",
+   "pdescription":"Rice, whole chicken, garlic, dates, ginseng, and shallot."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup8.jpg?alt=media&token=af7ec03a-a698-4d7b-93cb-22f5b8d6d00f",
+   "ptitle":"Spicy Mixed Soup",
+   "pdescription":"Rice, ham, sausages. kimchi, tofu, beans, vegetables, and..."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup9.jpg?alt=media&token=f73f51f3-f174-4c10-b77e-d07169a5a1d8",
+   "ptitle":"Rice Cake Dumpling Soup",
+   "pdescription":"Seafood dumplings and rice cakes."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup10.jpg?alt=media&token=4ea190ba-9f45-4c53-a305-6ab11a521e3d",
+   "ptitle":"Spicy Pork Bone Soup",
+   "pdescription":"Rice, pork bones, and vegetables."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup11.jpg?alt=media&token=b9dba16c-6a90-4a76-b3e3-505a5b4b0ec5",
+   "ptitle":"Kimchi Stew",
+   "pdescription":"Rice, kimchi, pork, tofu and vegetables."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup12.jpg?alt=media&token=7be92c93-2037-4a57-a1e6-1a36c53fa402",
+   "ptitle":"Spicy Beef Stew",
+   "pdescription":"Rice, beef, bean sprouts, mushroom, potato noodles,..."
+ },
+ {
+   "ptype":"Soup",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/soup13.jpg?alt=media&token=f6f27ed8-4553-4eb5-9717-71bf947246f4",
+   "ptitle":"Spicy Soup Toppoki",
+   "pdescription":"Rice cakes, vegetables, fish cakes, and chili sauce."
+ },
+ {
+   "ptype":"Noodles",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/noodle1.jpg?alt=media&token=b65b8a56-fb6b-4aaa-ba2a-7d11d8785a4b",
+   "ptitle":"Black Bean Noodles",
+   "pdescription":"Black bean sauce, noodles, chopped onion and..."
+ },
+ {
+   "ptype":"Noodles",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/noodle2.jpg?alt=media&token=8a869d80-d639-42b9-81ee-fa3fb9e27db9",
+   "ptitle":"Seafood Stir Fry Black Bean noodles",
+   "pdescription":"Black bean sauce, chopped onion, grounded pork, and..."
+ },
+ {
+   "ptype":"Noodles",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/noodle3.jpg?alt=media&token=a1231a46-c796-4638-bbd1-86fb936ee548",
+   "ptitle":"Udon Noodle Soup",
+   "pdescription":"Seafood dumplings, udon, and vegetable."
+ },
+ {
+   "ptype":"Noodles",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/noodle4.jpg?alt=media&token=dd4f6dc4-3278-4fc8-bcd6-5906c544a657",
+   "ptitle":"Stir Fry Seafood Udon",
+   "pdescription":"Seafood, udon, and teriyaki sauce."
+ },
+ {
+   "ptype":"Noodles",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/noodle5.jpg?alt=media&token=bc1d3ecf-225a-4940-b3a8-f2d4b78b9469",
+   "ptitle":"Seafood Jabchae",
+   "pdescription":"Potato noodles. seafood, vegetables, and soy sauce."
+ },
+ {
+   "ptype":"Noodles",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/noodle6.jpg?alt=media&token=c5da4784-0f0b-4030-b864-74454b09df69",
+   "ptitle":"Beef Jabchae",
+   "pdescription":"Potato noodles. beef, vegetables, and soy sauce."
+ },
+ {
+   "ptype":"Noodles",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/noodle7.jpg?alt=media&token=8a1c147b-ffca-4ab8-a7b3-a34c7f20663e",
+   "ptitle":"Vegetable Jabchae",
+   "pdescription":"Potato noodles, vegetables and soy sauce."
+ },
+ {
+   "ptype":"Noodles",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/noodle8.jpg?alt=media&token=0b6058d2-477e-4650-8a60-c964ec68b295",
+   "ptitle":"Cold Noodles",
+   "pdescription":"Buckwheat noodles, pickled faddish, pickled cucumber,..."
+ },
+ {
+   "ptype":"Noodles",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/noodle9.jpg?alt=media&token=c075e284-0673-4540-a70d-a79592a73c54",
+   "ptitle":"Spicy Cold Noodles",
+   "pdescription":"Buckwheat noodles, pickled faddish, pickled cucumber,..."
+ },
+ {
+   "ptype":"Extras",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/extra1.jpg?alt=media&token=eccd9116-a706-4deb-bc85-e7ac4b497647",
+   "ptitle":"Large Shoe String Chips",
+   "pdescription":"None."
+ },
+ {
+   "ptype":"Extras",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/extra2.jpg?alt=media&token=d6dbed44-29b5-43aa-adca-3081df3c6f45",
+   "ptitle":"Dumplings",
+   "pdescription":"Fried or Steamed."
+ },
+ {
+   "ptype":"Drinks",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/drink1.jpg?alt=media&token=19ecb6b5-2ad7-4e89-a9d9-8b88158d0b71",
+   "ptitle":"Coke",
+   "pdescription":"375 mL."
+ },
+ {
+   "ptype":"Drinks",
+   "pimage":"https://firebasestorage.googleapis.com/v0/b/sparrow-smillexpress.appspot.com/o/drink2.jpg?alt=media&token=e7791a4d-b670-4dc1-be93-e4ea906ec9bd",
+   "ptitle":"Sprite",
+   "pdescription":"375 mL."
+ }
+]
