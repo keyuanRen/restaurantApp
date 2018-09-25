@@ -25,9 +25,14 @@ export class ProfilePage {
   createUserProfile(){
     const qrcode = QRCode;
     const self = this;
-    qrcode.toDataURL(self.profile.username, { errorCorrectionLevel: 'H' }, function (err, url) {
-      self.profile.userQR = url;
+
+    this.afAuth.authState.subscribe(data => {
+      let id: any = data.uid;
+
+      qrcode.toDataURL(id, { errorCorrectionLevel: 'H' }, function (err, url) {
+        self.profile.userQR = url;
     })
+    });
 
     self.profile.userScord = 0;
 
