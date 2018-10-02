@@ -34,6 +34,7 @@
   <!-- <button  ion-button round (click)="viewUserInformation()">CheckInfo</button> -->
 
   <button  ion-button round color="red" class="buttonPosition" *ngIf="this.user" (click)="logOut()">Log Out</button>
+  <p style="text-align: center;" *ngIf="!this.user"> You have not sign up !! </p>
   <button  ion-button round color="red" class="buttonPosition" *ngIf="!this.user" (click)="backToWelcome()">Back To Welcome Page</button>
 
 <!-- encode the data to QR code -->

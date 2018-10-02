@@ -5,7 +5,8 @@ import { UserProfile } from '../../models/userProfile';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase } from 'angularfire2/database';
 
-import { LoginPage } from '../login/login';
+//import { LoginPage } from '../login/login';
+import {TabsPage} from '../tabs/tabs';
 
 import QRCode from 'qrcode';
 
@@ -39,7 +40,7 @@ export class ProfilePage {
     this.afAuth.authState.take(1).subscribe(auth => {
       let path= 'userProfile'+'/'+ auth.uid;
       this.afDatabase.object(path).set(this.profile)
-      .then(() => this.navCtrl.setRoot(LoginPage));
+      .then(() => this.navCtrl.setRoot(TabsPage));
     })
   }
 
