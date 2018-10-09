@@ -20,6 +20,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { Firebase_info } from './firebaseInfo';
 
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ProductsProvider } from '../providers/products/products';
@@ -63,6 +65,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     StatusBar,
     SplashScreen,
     BarcodeScanner,
+    InAppBrowser,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ProductsProvider
   ]

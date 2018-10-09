@@ -110,28 +110,28 @@
   <ion-fab right bottom>
       <button ion-fab color=red><ion-icon name="add"></ion-icon></button>
       <ion-fab-list side="left">
-        <button ion-fab href="#" onclick="window.open('https://www.facebook.com/thesparrowsmillexpress/?ref=br_rs','_system','location=yes');">
+        <button ion-fab (click)="openWithInAppBrowser('https://www.facebook.com/thesparrowsmillexpress/?ref=br_rs')">
           <ion-icon name="logo-facebook"></ion-icon>
       </button>
-        <button ion-fab href="#" onclick="window.open('https://www.instagram.com/express_sm/?hl=en','_system','location=yes');">
+        <button ion-fab (click)="openWithInAppBrowser('https://www.instagram.com/express_sm/?hl=en')">
           <ion-icon name="logo-instagram"></ion-icon>
         </button>
       </ion-fab-list>
       <ion-fab-list side="top">
-        <button ion-fab href="#" onclick="window.open('https://www.ubereats.com/zh-AU/sydney/food-delivery/sparrows-mill-express/2VzLdqhzQ7WN8hyDiC15GA/?ad_id=276697607968&adg_id=58700004154487223&adgroup_id=58700004154487223&adgroup_name=Restaurants_Sparrows+Mill+Express%3EDS3&campaign_id=71700000037410664&cid=71700000037410664&dclid=CJmBlcKRx9wCFYczYAodIOQNjg&dev=c&ext_id=&gclid=EAIaIQobChMI36_avpHH3AIVSqSWCh3vuwx_EAAYASAAEgIv8PD_BwE&gclsrc=aw.ds&kw=%2Bsparrows+%2Bmill+%2Bexpress&kw_id=p34256781051&kwid=p34256781051&lint_id=&lphy_id=9071867&match=b&net=g&placement=&pos=1t1&ran=14620990529364440952&target=&utm_campaign=search-google-nonbrand_10_31_au-sydney_e_acq_all_cpc_en_bmm_restaurants_ds3&utm_medium=cpc-nonbrand&utm_source=google&utm_term=%2Bsparrows+%2Bmill+%2Bexpress','_system','location=yes');">
+        <button ion-fab (click)="openWithInAppBrowser('https://www.ubereats.com/zh-AU/sydney/food-delivery/sparrows-mill-express/2VzLdqhzQ7WN8hyDiC15GA/?ad_id=276697607968&adg_id=58700004154487223&adgroup_id=58700004154487223&adgroup_name=Restaurants_Sparrows+Mill+Express%3EDS3&campaign_id=71700000037410664&cid=71700000037410664&dclid=CJmBlcKRx9wCFYczYAodIOQNjg&dev=c&ext_id=&gclid=EAIaIQobChMI36_avpHH3AIVSqSWCh3vuwx_EAAYASAAEgIv8PD_BwE&gclsrc=aw.ds&kw=%2Bsparrows+%2Bmill+%2Bexpress&kw_id=p34256781051&kwid=p34256781051&lint_id=&lphy_id=9071867&match=b&net=g&placement=&pos=1t1&ran=14620990529364440952&target=&utm_campaign=search-google-nonbrand_10_31_au-sydney_e_acq_all_cpc_en_bmm_restaurants_ds3&utm_medium=cpc-nonbrand&utm_source=google&utm_term=%2Bsparrows+%2Bmill+%2Bexpress')">
           <img alt="logo" height="30" src="../assets/imgs/uberEats.png" />
         </button>
-        <button ion-fab href="#" onclick="window.open('https://deliveroo.com.au/menu/sydney/haymarket/sparrows-mill-express','_system','location=yes');">
+        <button ion-fab (click)="openWithInAppBrowser('https://deliveroo.com.au/menu/sydney/haymarket/sparrows-mill-express')">
           <img alt="logo" height="30" src="../assets/imgs/deliveroo.jpg" />
         </button>
-        <button ion-fab href="#" onclick="window.open('https://www.menulog.com.au/restaurants-sparrows-mill-express','_system','location=yes');">
+        <button ion-fab (click)="openWithInAppBrowser('https://www.menulog.com.au/restaurants-sparrows-mill-express')">
           <img alt="logo" height="30" src="../assets/imgs/menulog.jpg" />
           <!-- <ion-icon name="uberEats.png"></ion-icon> -->
         </button>
-        <button ion-fab href="#" onclick="window.open('https://www.sydsc.com.au/customer_web/shop/4452','_system','location=yes');">
+        <button ion-fab (click)="openWithInAppBrowser('https://www.sydsc.com.au/customer_web/shop/4452')">
           <img alt="logo" height="30" src="../assets/imgs/sydsc.png" />
         </button>
-        <button ion-fab href="#" onclick="window.open('https://www.harkhark.com.au/takeaway/12371.html','_system','location=yes');">
+        <button ion-fab (click)="openWithInAppBrowser('https://www.harkhark.com.au/takeaway/12371.html')">
           <img alt="logo" height="30" src="../assets/imgs/harkhark.jpg" />
         </button>
       </ion-fab-list>
