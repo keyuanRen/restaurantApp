@@ -9,7 +9,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 })
 export class HomePage {
 
-  options : InAppBrowserOptions = {
+  options :{
     location : 'yes',//Or 'no'
     hidden : 'no', //Or  'yes'
     clearcache : 'yes',
